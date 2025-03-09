@@ -6,24 +6,28 @@ function agregarAmigo() {
     const inputAmigo = document.getElementById('amigo');
     const nombre = inputAmigo.value.trim();
 
+    // Validación de que el nombre no este vacio
     if (nombre === "") {
         alert("Por favor, ingresa un nombre válido.");
         return;
     }
 
+    // Validación que el nombre no tenga caracteres especiales
     if (!/^[A-Za-zÁ-Úá-ú\s]+$/.test(nombre)) {
         alert("Por favor, ingresa un nombre válido (solo letras y espacios).");
         return;
     }
 
+    // Validación que no sea nombre repetido
     if (amigos.includes(nombre)) {
         alert("Este nombre ya ha sido agregado.");
         return;
     }
 
+    // Agregar el nombre a la lista y participantes. 
     amigos.push(nombre);
     participantes.push(nombre);
-    inputAmigo.value = ""; 
+    inputAmigo.value = ""; // Limpia el campo de texto
 
     actualizarListaAmigos();
 }
