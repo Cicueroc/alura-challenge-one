@@ -1,4 +1,4 @@
-# alura.challenge.one.github
+# alura-challenge-one
 Challenge del Amigo Secreto
 
 ¡Bienvenido al proyecto Amigo Secreto de Alura! Esta es una aplicación web simple pero divertida que te permite organizar un sorteo de "amigo secreto" entre tus amigos, familiares o compañeros de trabajo. ¡Perfecto para eventos, fiestas o simplemente para divertirte!
